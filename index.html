@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>Man City Scoreboard</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container-scoreboard">
+            <div class="home-board">
+                <h3>HOME</h3>
+                <h2 id="home-score">0</h2>
+                <button onclick="increaseHomeScoreBy1()">+1</button>
+                <button onclick="increaseHomeScoreBy2()">+2</button>
+                <button onclick="increaseHomeScoreBy3()">+3</button>
+            </div>
+            <div class="guest-board">
+                <h3>GUEST</h3>
+                <h2 id="guest-score">0</h2>
+                <button onclick="increaseGuestScoreBy1()">+1</button>
+                <button onclick="increaseGuestScoreBy2()">+2</button>
+                <button onclick="increaseGuestScoreBy3()">+3</button>
+            </div>
+        </div>
+        <button class="newgamebtn" onclick="newgame()">New Game</button>
+        <script src="index.js"></script>
+    </body>
+</html>
